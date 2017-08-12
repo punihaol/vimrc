@@ -1,3 +1,7 @@
+" Pathogen {{{
+call pathogen#infect()
+call pathogen#helptags()
+"}}}
 " Colors {{{
 colorscheme badwolf
 syntax enable
@@ -26,7 +30,6 @@ set foldenable     " enable code folding
 set foldlevelstart=10 " open folds less than 10 nests by default
 set foldnestmax=10 " 10 nested fold max
 " }}}
-
 set modelines=1
 
 " vim:foldmethod=marker:foldlevel=0
