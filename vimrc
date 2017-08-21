@@ -1,3 +1,19 @@
+" Vundle {{{
+set nocompatible    " be iMproved, required
+filetype off        " required
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+" Place Vundle managed Plugins below
+Plugin 'Valloric/YouCompleteMe' " YCM plugin
+Plugin 'kien/ctrlp.vim'
+call vundle#end()
+filetype plugin indent on " required
+"}}}
 " Pathogen {{{
 call pathogen#infect()
 call pathogen#helptags()
@@ -19,6 +35,7 @@ set cursorline     " highlight current line
 set wildmenu       " visual autocomplete for command menu
 set lazyredraw     " redraw only when we need to
 set showmatch      " highlight matching braces
+set ruler          " show a ruler in the status bar
 " }}}
 " Search {{{
 set incsearch      " search as characters are entered
